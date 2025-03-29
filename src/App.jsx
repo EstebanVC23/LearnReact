@@ -11,10 +11,11 @@ function getRamdomIntInRange(min, max) {
 }
 
 function Header() {
+    const reactWinner = reactTitles[getRamdomIntInRange(0, 4)];
     return (
         <header>
             <img src="src/assets/react.svg" alt="React logo" />
-            <h1>{reactTitles[getRamdomIntInRange(0, 4)]}</h1>
+            <h1>{reactWinner}</h1>
             <p>
                 ¡Conceptos fundamentales de React que necesitas conocer para
                 desarrollar cualquier app con esta famosa librería!
