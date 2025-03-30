@@ -8,7 +8,7 @@
 
 /* Estilos del logo */
 .logo {
-  height: 4em; /* Tamaño más pequeño */
+  height: 4em;
   padding: 1em;
   will-change: filter;
   transition: filter 250ms ease-in-out, transform 200ms ease-in-out;

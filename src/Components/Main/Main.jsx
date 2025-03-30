@@ -1,8 +1,13 @@
-import CoreConcepts from "./CoreConcepts"
-import reactObject from "../DataConcepts.js"; // Importación corregida
-import "../Styles/Main.css"
+import CoreConcepts from "./CoreConcepts.jsx";
+import "../../Styles/Main.css"
+import TabButton from "./TabButton.jsx";
 
 function Main(){
+    function handleClickMenu(selectedButton) {
+        return (
+            console.log(`Has seleccionado el botón: ${selectedButton}`)
+        );
+    }
     return (
         <main>
             <section>
@@ -45,21 +50,23 @@ function Main(){
                     ¡Gracias por visitar mi página sobre React!
                 </p>
             </section>
-                
 
-            <section id="CoreConcepts">
-                <h2>Conceptos Clave</h2>
-                <div className="CoreConcepts">
-                    {reactObject.map(({ src, tittle, description }, index) => (
-                        <CoreConcepts
-                            key={index}
-                            src={src}
-                            tittle={tittle}
-                            description={description}
-                        />
-                    ))}
-                </div>
-            </section>
+            <section id = "ReactExamples">
+                <h2>Ejemplos de React</h2>
+                <menu>
+                    <TabButton onClick={() => handleClickMenu("Componentes")}>Componentes</TabButton>
+                    <TabButton onClick={() => handleClickMenu("Conceptos")}>Conceptos Clave</TabButton>
+                    <TabButton onClick={() => handleClickMenu("Hooks")}>Hooks</TabButton>
+                    <TabButton onClick={() => handleClickMenu("Estados")}>Estado y Props</TabButton>
+                    <TabButton onClick={() => handleClickMenu("Eventos y Formularios")}>Eventos y Formularios</TabButton>
+                    <TabButton onClick={() => handleClickMenu("Proyectos")}>Proyecto Práctico</TabButton>
+                </menu>
+
+            </section>    
+
+            <CoreConcepts/>
+
+            
 
         </main>
     )

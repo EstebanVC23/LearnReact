@@ -1,0 +1,38 @@
+/* Contenedor del botón */
+.TabButton {
+    list-style: none;
+    display: inline-block; /* Asegura que se mantenga alineado correctamente */
+}
+
+/* Botón sin fondo y con tipografía estilizada */
+.TabButton button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #b0b3ba; /* Color claro para contraste */
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-family: "Quicksand", sans-serif; /* Usa la fuente de la página */
+    text-decoration: none;
+}
+
+/* Efecto hover con cambio de color */
+.TabButton button:hover {
+    color: #ffcc00; /* Amarillo llamativo */
+    transform: translateY(-2px);
+}
+
+/* Efecto cuando el botón está activo */
+.TabButton button:active {
+    color: #ff9900; /* Naranja más fuerte */
+    transform: translateY(0);
+}
+
+/* Si quieres resaltar el botón activo en el menú */
+.TabButton button.active {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 0.3rem;
+}
