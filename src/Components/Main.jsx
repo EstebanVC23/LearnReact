@@ -5,6 +5,7 @@ import "../Styles/Main.css"
 function Main(){
     return (
         <main>
+            <section>
                 <h2 className="Subtitulo">ReactJS</h2>
                 <p className="parrafo">
                     React es una biblioteca de JavaScript para construir
@@ -43,21 +44,24 @@ function Main(){
                     contactarme.
                     ¡Gracias por visitar mi página sobre React!
                 </p>
+            </section>
+                
 
-                <section id="CoreConcepts">
-                    <h2>Conceptos Clave</h2>
-                    <div className="CoreConcepts">
-                        {reactObject.map(({ src, tittle, description }, index) => (
-                            <CoreConcepts
-                                key={index}
-                                src={src}
-                                tittle={tittle}
-                                description={description}
-                            />
-                        ))}
-                    </div>
-                </section>
-            </main>
+            <section id="CoreConcepts">
+                <h2>Conceptos Clave</h2>
+                <div className="CoreConcepts">
+                    {reactObject.map(({ src, tittle, description }, index) => (
+                        <CoreConcepts
+                            key={index}
+                            src={src}
+                            tittle={tittle}
+                            description={description}
+                        />
+                    ))}
+                </div>
+            </section>
+
+        </main>
     )
 }
 
