@@ -1,4 +1,4 @@
-import "../../Styles/CardCoreConcepts.css";
+import "../../../Styles/CardCoreConcepts.css";
 
 function CardCoreConcepts({ src, tittle, description }) {
     return (

@@ -1,13 +1,8 @@
-import CoreConcepts from "./CoreConcepts.jsx";
+import CoreConcepts from "./OptionConcepts/CoreConcepts.jsx";
 import "../../Styles/Main.css"
-import TabButton from "./TabButton.jsx";
+import Menu from "./Menu/Menu.jsx"
 
 function Main(){
-    function handleClickMenu(selectedButton) {
-        return (
-            console.log(`Has seleccionado el botón: ${selectedButton}`)
-        );
-    }
     return (
         <main>
             <section>
@@ -51,18 +46,7 @@ function Main(){
                 </p>
             </section>
 
-            <section id = "ReactExamples">
-                <h2>Ejemplos de React</h2>
-                <menu>
-                    <TabButton onClick={() => handleClickMenu("Componentes")}>Componentes</TabButton>
-                    <TabButton onClick={() => handleClickMenu("Conceptos")}>Conceptos Clave</TabButton>
-                    <TabButton onClick={() => handleClickMenu("Hooks")}>Hooks</TabButton>
-                    <TabButton onClick={() => handleClickMenu("Estados")}>Estado y Props</TabButton>
-                    <TabButton onClick={() => handleClickMenu("Eventos y Formularios")}>Eventos y Formularios</TabButton>
-                    <TabButton onClick={() => handleClickMenu("Proyectos")}>Proyecto Práctico</TabButton>
-                </menu>
-
-            </section>    
+            <Menu/>
 
             <CoreConcepts/>
 

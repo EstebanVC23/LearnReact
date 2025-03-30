@@ -1,4 +1,4 @@
-import "../../Styles/TabButton.css";
+import "../../../Styles/TabButton.css";
 
 function TabButton({ children, onClick }) {
     return (
