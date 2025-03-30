@@ -1,4 +1,5 @@
 import reactLogo from "../assets/react.svg";
+import "../Styles/Header.css";
 
 const reactTitles = [
     "React Fundamentos",

@@ -1,3 +1,5 @@
+import "../Styles/CoreConcepts.css";
+
 function CoreConcepts({ src, tittle, description }) {
     // Desestructuración de props
     // const { src, tittle, description } = props;

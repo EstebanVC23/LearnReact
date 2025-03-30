@@ -1,0 +1,49 @@
+
+    /* Estilos individuales de cada tarjeta */
+  .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2em;
+    background: #333; /* Un gris oscuro mate */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 300px; /* Limitar el tamaño de la card */
+  }
+  
+  .Card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+  /* Títulos */
+  .h3prop {
+    font-size: 1.2em; /* Ligera reducción del tamaño */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+  }
+  
+  /* Párrafos */
+  .pprop {
+    font-size: 0.9em; /* Tamaño más compacto */
+    color: #ccc;
+    line-height: 1.4;
+    margin-bottom: 1em;
+  }
+  
+  /* Imágenes */
+  .imgprop {
+    height: 200px; /* Tamaño aún más reducido */
+    padding: 0.5em; /* Menos espacio alrededor */
+    transition: filter 250ms ease, transform 200ms ease-in-out;
+  }
+  
+  .imgprop:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+  }
