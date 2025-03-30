@@ -11,12 +11,7 @@ Este es un proyecto de una aplicación web desarrollada con **React** para la ge
 - Gestionar datos en tiempo real con **API REST**.
 
 ## 🛠️ Tecnologías Utilizadas
-- **Frontend:** React.js, React Router, Tailwind CSS
-- **Estado:** useState, useEffect, Context API (opcional)
-- **Backend:** Node.js con Express.js (en desarrollo)
-- **Base de Datos:** MongoDB Atlas (en desarrollo)
-- **Autenticación:** JSON Web Tokens (JWT) (en desarrollo)
-- **Despliegue:** Vercel / Netlify (por definir)
+- **Frontend:** React.js, React Router
 
 ## 📂 Estructura del Proyecto
 ```plaintext
@@ -52,18 +47,9 @@ npm run dev
 Accede en tu navegador a: [http://localhost:5173](http://localhost:5173)
 
 ## 📌 Características Principales
-✅ Navegación entre secciones usando **React Router**.
 ✅ Componentes reutilizables organizados en la carpeta **components/**.
-✅ Uso de **Tailwind CSS** para diseño rápido y responsivo.
-✅ Implementación de Hooks como **useState** y **useEffect**.
+✅ Implementación de Hooks como **useState**.
 ✅ Estructura modular y escalable.
-
-## 🚀 Despliegue
-La aplicación se puede desplegar en servicios como **Vercel** o **Netlify** con los siguientes pasos:
-```bash
-git push origin main
-```
-Luego, conecta el repositorio con la plataforma de despliegue y sigue las instrucciones.
 
 ## 🤝 Contribución
 Si deseas contribuir al proyecto:
@@ -76,6 +62,4 @@ Si deseas contribuir al proyecto:
 Este proyecto está bajo la licencia **MIT**. Puedes usarlo, modificarlo y distribuirlo libremente.
 
 ---
-
-💡 **MotoBrothers** - Un proyecto hecho con pasión por el desarrollo web y la innovación en el mundo de las motocicletas. 🏍️✨
 
