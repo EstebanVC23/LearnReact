@@ -1,12 +1,81 @@
-# React + Vite
+# 📌 Proyecto de React - MotoBrothers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Descripción del Proyecto
+Este es un proyecto de una aplicación web desarrollada con **React** para la gestión del almacén y taller de reparación de motocicletas "MotoBrothers". La plataforma permite a los usuarios **comprar repuestos**, **reservar citas** y **administrar productos** de manera eficiente.
 
-Currently, two official plugins are available:
+## 🎯 Objetivos Principales
+- Implementar una aplicación web moderna con **React.js**.
+- Utilizar buenas prácticas en la organización del código.
+- Crear una interfaz intuitiva y atractiva para los usuarios.
+- Integrar un sistema de autenticación y autorización.
+- Gestionar datos en tiempo real con **API REST**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías Utilizadas
+- **Frontend:** React.js, React Router, Tailwind CSS
+- **Estado:** useState, useEffect, Context API (opcional)
+- **Backend:** Node.js con Express.js (en desarrollo)
+- **Base de Datos:** MongoDB Atlas (en desarrollo)
+- **Autenticación:** JSON Web Tokens (JWT) (en desarrollo)
+- **Despliegue:** Vercel / Netlify (por definir)
 
-## Expanding the ESLint configuration
+## 📂 Estructura del Proyecto
+```plaintext
+📦 MotoBrothers
+├── 📁 public            # Archivos estáticos
+├── 📁 src               # Código fuente principal
+│   ├── 📁 components    # Componentes reutilizables
+│   ├── 📁 styles        # Archivos de estilos (CSS)
+│   ├── 📁 assets        # Imágenes y recursos
+│   ├── App.js          # Componente principal
+│   ├── index.js        # Punto de entrada de la aplicación
+├── .gitignore          # Archivos ignorados por Git
+├── package.json        # Dependencias y configuraciones
+├── README.md           # Documentación del proyecto
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 Instalación y Configuración
+### 1️⃣ Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/MotoBrothers.git
+cd MotoBrothers
+```
+
+### 2️⃣ Instalar dependencias
+```bash
+npm install
+```
+
+### 3️⃣ Ejecutar el proyecto en modo desarrollo
+```bash
+npm run dev
+```
+Accede en tu navegador a: [http://localhost:5173](http://localhost:5173)
+
+## 📌 Características Principales
+✅ Navegación entre secciones usando **React Router**.
+✅ Componentes reutilizables organizados en la carpeta **components/**.
+✅ Uso de **Tailwind CSS** para diseño rápido y responsivo.
+✅ Implementación de Hooks como **useState** y **useEffect**.
+✅ Estructura modular y escalable.
+
+## 🚀 Despliegue
+La aplicación se puede desplegar en servicios como **Vercel** o **Netlify** con los siguientes pasos:
+```bash
+git push origin main
+```
+Luego, conecta el repositorio con la plataforma de despliegue y sigue las instrucciones.
+
+## 🤝 Contribución
+Si deseas contribuir al proyecto:
+1. Haz un **fork** del repositorio.
+2. Crea una nueva rama (`git checkout -b feature-nueva`).
+3. Realiza los cambios y haz un commit (`git commit -m "Agrega nueva funcionalidad"`).
+4. Envía un **pull request**.
+
+## 📝 Licencia
+Este proyecto está bajo la licencia **MIT**. Puedes usarlo, modificarlo y distribuirlo libremente.
+
+---
+
+💡 **MotoBrothers** - Un proyecto hecho con pasión por el desarrollo web y la innovación en el mundo de las motocicletas. 🏍️✨
+

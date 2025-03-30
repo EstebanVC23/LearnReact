@@ -1,6 +1,6 @@
 import CardCoreConcepts from "./CardCoreConcepts.jsx"
-import reactObject from "../../../DataConcepts.js";
-import "../../../Styles/CoreConcepts.css";
+import reactObject from "./DataConcepts.js";
+import "../../../../Styles/Menu/OptionConcepts/CoreConcepts.css";
 
 function CoreConcepts(){
     return (

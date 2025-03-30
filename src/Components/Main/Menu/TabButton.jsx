@@ -1,10 +1,11 @@
-import "../../../Styles/TabButton.css";
+import "../../../Styles/Menu/TabButton.css";
 
-function TabButton({ children, onClick }) {
+function TabButton({ children, onClick, isSelected }) {
     return (
         <li className="TabButton">
             <button
-            onClick={onClick}>{children}</button>
+            onClick={onClick}
+            className={isSelected ? 'active' : ''}>{children}</button>
         </li>
     );
 }

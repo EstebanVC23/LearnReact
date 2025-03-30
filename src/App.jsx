@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Styles/App.css";
 import Main from "./Components/Main/Main.jsx";
 import Header from "./Components/Header.jsx";
 import Footer from "./Components/Footer.jsx";

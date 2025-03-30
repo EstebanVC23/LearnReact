@@ -1,0 +1,108 @@
+#HooksTabs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Estilo para los subtítulos */
+.Subtitulo {
+  text-align: left;
+  margin-bottom: 15px;
+  color: #ffcc00;
+  font-size: 2.2rem;
+  font-weight: 700;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Estilo para los párrafos */
+.Paragraph {
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  color: #cdcbcb;
+  font-size: 1.1rem;
+  max-width: 800px;
+  font-weight: 400;
+  padding-left: 5px;
+  border-left: 3px solid #ffcc00;
+}
+
+/* Nueva sección de características */
+.features-section {
+  margin-bottom: 40px;
+  background-color: #282c34;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.FeaturesList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.FeaturesList li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  color: #f8f8f8;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.FeaturesList li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.FeaturesList code {
+  background-color: #3d3d3d;
+  color: #ffcc00;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.95rem;
+}
+
+/* Contenedor de pestañas */
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  background-color: #282c34;
+  padding: 10px 10px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    margin-bottom: 5px;
+  }
+  
+  .Subtitulo {
+    font-size: 1.8rem;
+  }
+  
+  .features-section {
+    padding: 15px;
+  }
+}

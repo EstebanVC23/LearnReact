@@ -13,7 +13,7 @@ main {
 }
 
 /* Estilo del subtítulo */
-.Subtitulo {
+#Subtitulo {
     font-size: 2rem;
     text-align: center;
     color: #ffcc00;

@@ -1,12 +1,12 @@
-import CoreConcepts from "./OptionConcepts/CoreConcepts.jsx";
 import "../../Styles/Main.css"
 import Menu from "./Menu/Menu.jsx"
+
 
 function Main(){
     return (
         <main>
             <section>
-                <h2 className="Subtitulo">ReactJS</h2>
+                <h2 id="Subtitulo">ReactJS</h2>
                 <p className="parrafo">
                     React es una biblioteca de JavaScript para construir
                     interfaces de usuario. Permite crear aplicaciones web
@@ -48,7 +48,7 @@ function Main(){
 
             <Menu/>
 
-            <CoreConcepts/>
+            
 
             
 

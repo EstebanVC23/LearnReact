@@ -1,0 +1,66 @@
+/* Estilos generales del carrusel */
+.carousel-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Estilos de cada slide */
+.slide {
+    padding: 15px;
+}
+
+.slide h2 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Estilos del código */
+.slide pre {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+}
+
+.slide code {
+    color: #ffcc00;
+    font-family: "Courier New", monospace;
+    white-space: pre-wrap;
+    display: block;
+}
+
+/* Botones del carrusel */
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.carousel-buttons button {
+    background: #ff9900;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+    background: #ffcc00;
+}

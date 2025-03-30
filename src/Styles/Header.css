@@ -6,7 +6,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background: #282c34;
+    background: #2a2a2a;
     color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -33,7 +33,7 @@ header img {
 /* Título dinámico */
 header h1 {
     font-size: 2rem;
-    color: #61dafb;
+    color: #ffcc00;
     margin-top: 10px;
 }
 

@@ -1,0 +1,221 @@
+.hook-content {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  text-align: left; /* Asegura que todo el contenido esté alineado a la izquierda */
+}
+
+.hook-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hook-name {
+  color: #ffcc00;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.hook-description {
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-size: 1.05rem;
+  color: #e0e0e0;
+  text-align: left;
+}
+
+/* Estilos para la sección de detalles */
+.hook-details {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  border-left: 4px solid #ffcc00;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.hook-details:hover {
+  background-color: #2f2f2f;
+}
+
+.hook-details h4 {
+  color: #ffcc00;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.hook-details h4::before {
+  content: "✦";
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.hook-details ul {
+  margin: 0;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.hook-details li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
+  list-style-type: none;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.hook-details li::before {
+  content: "→";
+  color: #ffcc00;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Estilos para la sección de ejemplo */
+.hook-example {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.hook-example h4 {
+  color: #ffcc00;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.hook-example h4::before {
+  content: "⌨";
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.hook-example pre {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+  margin: 0;
+  border-left: 4px solid #ffcc00;
+  transition: all 0.2s ease;
+  text-align: left; /* Asegura que el contenido del pre esté alineado a la izquierda */
+}
+
+.hook-example pre:hover {
+  background-color: #333333;
+}
+
+.hook-example code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 0.95rem;
+  color: #e6e6e6;
+  display: block;
+  white-space: pre;
+  line-height: 1.5;
+  text-align: left; /* Explícitamente alinea el código a la izquierda */
+}
+
+/* Destacar palabras clave en el código */
+.hook-example code .keyword {
+  color: #c586c0;
+  font-weight: 500;
+}
+
+.hook-example code .function {
+  color: #dcdcaa;
+}
+
+.hook-example code .variable {
+  color: #9cdcfe;
+}
+
+.hook-example code .string {
+  color: #ce9178;
+}
+
+.hook-example code .comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.hook-example code .component {
+  color: #4ec9b0;
+}
+
+.hook-example code .prop {
+  color: #4fc1ff;
+}
+
+.hook-example code .js-expr {
+  color: #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hook-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hook-name {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .hook-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .hook-details, .hook-example pre {
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+  .hook-details h4, .hook-example h4 {
+    font-size: 1.15rem;
+  }
+  
+  .hook-example code {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hook-content {
+    padding: 16px;
+  }
+  
+  .hook-name {
+    font-size: 1.3rem;
+  }
+  
+  .hook-details, .hook-example pre {
+    padding: 12px;
+  }
+}

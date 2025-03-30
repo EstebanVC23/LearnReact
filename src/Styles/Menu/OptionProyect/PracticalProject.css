@@ -1,0 +1,210 @@
+/* Estilos generales del contenedor */
+.practical-project {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    color: #f0f0f0;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Centrar solo títulos principales y subtítulos */
+.practical-project h2,
+.practical-project h3,
+.practical-project .section-title {
+    text-align: center;
+}
+
+/* Estilos específicos para h2 */
+.practical-project h2 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Subtítulos */
+.practical-project .section-title {
+    color: #ffcc00;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+/* Texto introductorio con alineación normal */
+.practical-project .intro-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #d0d0d0;
+    text-align: left;
+}
+
+/* Navegación entre secciones */
+.project-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+    justify-content: center;
+}
+
+.project-nav button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #b0b3ba;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 5px;
+}
+
+.project-nav button:hover {
+    color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+.project-nav button.active {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 0.3rem;
+}
+
+/* Contenido de la sección */
+.section-content {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #ffcc00;
+    animation: fadeIn 0.3s ease;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.github-link:hover {
+    background-color: #ff9900;
+    transform: translateY(-2px);
+}
+
+.github-link:active {
+    transform: translateY(0);
+}
+
+.code-folder {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-family: 'Consolas', monospace;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.folder-container {
+    margin-bottom: 20px;
+}
+
+.folder-name {
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.folder-description {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #d0d0d0;
+}
+
+.best-practice-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.best-practice-item:last-child {
+    border-bottom: none;
+}
+
+.best-practice-title {
+    color: #61dafb;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.github-project-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 3px solid #61dafb;
+    transition: transform 0.2s;
+}
+
+.github-project-card:hover {
+    transform: translateY(-3px);
+}
+
+.project-title {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.project-description {
+    color: #d0d0d0;
+    margin-bottom: 12px;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: rgba(97, 218, 251, 0.2);
+    color: #61dafb;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .project-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-nav button {
+        width: 100%;
+        text-align: center;
+    }
+}
